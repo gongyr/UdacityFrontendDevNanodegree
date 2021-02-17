@@ -1,1 +1,1 @@
-# UdacityFrontendDevNanodegree
+# Udacity Front End Developer Nanodegree
