@@ -1,0 +1,99 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:10vh 100vh 15vh;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "hd hd hd"
+  "ct ct ct"
+  "ft ft ft";
+  /*border: 2px solid red;*/
+  background-color: rgb(254, 250, 246);
+  font-family: 'Courier New', monospace;
+}
+/*If Screen is narrow and short*/
+@media (max-width:375px) {
+  .container{
+  display: grid;
+  height: 90vh;
+  grid-template-columns: 375px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "hd"
+  "ct"
+  "ft";
+  border: 2px solid red;
+  background-color: rgb(254, 250, 246);
+
+}
+}
+
+.box{
+    /*border: 1px solid grey*/;
+    background: rgb(254, 250, 246);
+    }
+  .header{
+    padding: 3.5vw;
+    padding-top: 4vh;
+    font-size: 1.5em;
+    grid-area: hd;
+  }
+  .headertag{
+    padding-right: 4vw;
+  }
+
+  a{
+    color:black;
+    text-decoration: none;
+  }
+   .content{
+    padding-left: 15vw;
+    padding-right:15vw;
+    grid-area: ct;
+    display:flex;
+    flex-flow: row wrap;
+   }
+   .innerbox{
+    border: 3px solid;
+    border-radius: 25px;
+    border-color: #3a2e40;
+    flex: 1 0 28%;
+    margin-bottom: 5px; 
+    margin-right:5px   
+   }
+   .element{
+    padding-top: 30px;
+    display:flex;
+    justify-content: center; 
+   }
+  .description{
+    padding:30px;
+  }
+   @media screen and (max-width:800px) {
+    .innerbox{
+    flex: 1 0 50%;
+   }
+   }
+
+  .footer{
+    margin-top: 2vw;
+    padding-left: 3.5vw;
+    grid-area: ft;      
+  }
+
+  .email{
+    width:60px;
+    padding-left: 40vw;
+    padding-right: 30px;
+    padding-bottom: 15px;
+  }
+  .linkedin{
+    padding-bottom: 20px;
+    padding-right: 30px;
+  }
+  .github{
+    width:50px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+  }
+

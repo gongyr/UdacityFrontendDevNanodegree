@@ -1,0 +1,90 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh 75vh 15vh;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "hd hd "
+  "in pic "
+  "ft ft";
+  /*border: 2px solid red;*/
+  background-color: rgb(254, 250, 246);
+  font-family: 'Courier New', monospace;
+}
+/*If Screen is narrow and short*/
+@media (max-width:375px) {
+  .container{
+  display: grid;
+  height: 90vh;
+  grid-template-columns: 375px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: 
+  "hd"
+  "in"
+  "pic"
+  "ft";
+  border: 2px solid red;
+  background-color: rgb(254, 250, 246);
+
+}
+}
+
+.box{
+    /*border: 1px solid red*/;
+    background: rgb(254, 250, 246);
+    }
+  .header{
+    padding: 3.5vw;
+    padding-top: 4vh;
+    font-size: 1.5em;
+    grid-area: hd;
+  }
+  .headertag{
+    padding-right: 4vw;
+  }
+
+  a{
+    color:black;
+    text-decoration: none;
+  }
+  .intro{
+    padding-top: 4vw;
+    padding-left: 3.5vw;
+    grid-area: in;
+    font-size:2.5em;
+  }
+  .intropic{
+    margin-right: 0.5vw;
+    color: purple;
+    border-radius: 25px;
+    padding: 8vw;
+    text-align: center;
+    grid-area: pic;
+    background-image: linear-gradient(LemonChiffon , plum);
+  }
+  .introText{
+    width: 30vw;
+    font-size:0.5em ;
+  }
+  .footer{
+    margin-top: 2vw;
+    padding-left: 3.5vw;
+    grid-area: ft;      
+  }
+
+  .email{
+    width:60px;
+    padding-left: 40vw;
+    padding-right: 30px;
+    padding-bottom: 15px;
+  }
+  .linkedin{
+    padding-bottom: 20px;
+    padding-right: 30px;
+  }
+  .github{
+    width:50px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+  }
+
