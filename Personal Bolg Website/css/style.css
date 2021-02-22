@@ -1,3 +1,7 @@
+@import url('header.css');
+@import url('intro.css');
+@import url('footer.css');
+
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,41 +18,33 @@
 /*If Screen is narrow and short*/
 @media (max-width:375px) {
   .container{
-  display: grid;
-  height: 90vh;
-  grid-template-columns: 375px;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: 
-  "hd"
-  "in"
-  "pic"
-  "ft";
-  border: 2px solid red;
-  background-color: rgb(254, 250, 246);
-
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 375px;
+    grid-template-rows: 0.2fr 2.5fr 3fr 0.2fr;
+    grid-template-areas: 
+    "hd"
+    "in"
+    "pic"
+    "ft";
+    /*border: 2px solid red*/;
+    background-color: rgb(254, 250, 246);
 }
-}
-  .intro{
-    padding-top: 4vw;
-    padding-left: 3.5vw;
-    grid-area: in;
-    font-size:2.5em;
-  }
-  i{
-    text-decoration: underline;
-  }
-  .intropic{
-    margin-right: 0.5vw;
-    color: purple;
-    border-radius: 25px;
-    padding: 8vw;
-    text-align: center;
-    grid-area: pic;
-    background-image: linear-gradient(LemonChiffon , plum);
-  }
   .introText{
-    width: 30vw;
+    width: 94vw;
     font-size:0.5em ;
   }
-
-
+ .email{
+    padding-left: 20vw;
+    padding-right: 0vw;
+    padding-bottom: 18vw;
+  }
+  .linkedin{
+    padding-bottom: 20vw;
+    padding-right: 0vw;
+  }
+  .github{
+    padding-bottom: 20vw;
+    padding-right: 3vw;
+  }
+}

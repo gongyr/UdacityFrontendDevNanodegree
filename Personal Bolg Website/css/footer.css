@@ -1,10 +1,9 @@
-  footer{
+   footer{
     margin-top: 2vw;
     padding-left: 3.5vw;
     grid-area: ft;      
   }
-
-  .email{
+ .email{
     width:60px;
     padding-left: 40vw;
     padding-right: 30px;

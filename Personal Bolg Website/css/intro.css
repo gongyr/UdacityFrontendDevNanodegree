@@ -1,0 +1,22 @@
+.intro{
+    padding-top: 4vw;
+    padding-left: 3.5vw;
+    grid-area: in;
+    font-size:2.5em;
+  }
+  i{
+    text-decoration: underline;
+  }
+  .intropic{
+    margin-right: 0.5vw;
+    color: purple;
+    border-radius: 25px;
+    padding: 8vw;
+    text-align: center;
+    grid-area: pic;
+    background-image: linear-gradient(LemonChiffon , plum);
+  }
+  .introText{
+    width: 30vw;
+    font-size:0.5em ;
+  }

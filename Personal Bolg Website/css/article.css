@@ -1,3 +1,6 @@
+@import url("header.css");
+@import url("content.css");
+@import url("footer.css");
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -14,90 +17,48 @@
 /*If Screen is narrow and short*/
 @media (max-width:375px) {
   .container{
-  display: grid;
-  height: 90vh;
-  grid-template-columns: 375px;
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: 
-  "hd"
-  "ct"
-  "ft";
-  border: 2px solid red;
-  background-color: rgb(254, 250, 246);
-
-}
-}
-
-  .content{
-    padding-left: 15vw;
-    padding-right: 15vw;
-    grid-area: ct;
-    display: block;
-    justify-content: center;
-   }
-   .articleImg{
-    width:600px;
-    height:400px;
-   }
-   h1{
-    font-size: 3em;
-   }
-   .paragraph{
-    font-size: 1.25rem;
-   }
+    display: grid;
+    height: 90vh;
+    grid-template-columns: 375px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "hd"
+    "ct"
+    "ft";
+    /*border: 2px solid red*/;
+    background-color: rgb(254, 250, 246);
+}   
    figcaption{
     color:grey;
+    font-size: 0.6em;
     margin-bottom: 20px;
    }
-   .authorInfo{
-    width:200px;
-    font-size: 1rem;
-   }
-   .author{
-    width:50px;
-    height:50px;
-   }
-   .firstWord{
-    font-size: 2.25em;
-   }
-    blockquote {
-      background: #f9f9f9;
-      border-left: 10px solid #ccc;
-      margin: 1.5em 10px;
-      padding: 0.5em 10px;
-      quotes: "\201C""\201D""\2018""\2019";
-    }
-    blockquote:before {
-      color: #ccc;
-      content: open-quote;
-      font-size: 4em;
-      line-height: 0.1em;
-      margin-right: 0.25em;
-      vertical-align: -0.4em;
-    }
-    blockquote p {
-      display: inline;
-    }
 
-   button{
-   border: none;
-   color: white;
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 4px;
-   cursor: pointer;
-   background-color: plum;
-   display:inline block;  
-   border-radius: 5px;
-   }
    .button1{
-    margin-left: 25vw;
+     margin-left: 0vw;
    }
    .button2{
     margin-left: 5vw;
    }
+   footer{
+    margin-top: -3vw;
+    padding-left: 3.5vw;
+    padding-top:3vw;
+    grid-area: ft;      
+  }
+ .email{
+    padding-left: 20vw;
+    padding-right: 0vw;
+    padding-bottom: 18vw;
+  }
+  .linkedin{
+    padding-bottom: 20vw;
+    padding-right: 0vw;
+  }
+  .github{
+    padding-bottom: 20vw;
+    padding-right: 3vw;
+  }
+}
 
 
