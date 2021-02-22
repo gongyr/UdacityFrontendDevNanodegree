@@ -1,7 +1,7 @@
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:10vh 160vh 15vh;
+  grid-template-rows:10vh 195vh 15vh;
   grid-gap: 10px;
   grid-template-areas: 
   "hd hd hd"
@@ -61,12 +61,45 @@
    h1{
     font-size: 3em;
    }
-   p{
+   .paragraph{
     font-size: 1.25rem;
+   }
+   figcaption{
+    color:grey;
+    margin-bottom: 20px;
+   }
+   .authorInfo{
+    width:200px;
+    font-size: 1rem;
+   }
+   .author{
+    width:50px;
+    height:50px;
+   }
+
+   button{
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   background-color: plum;
+   display:inline block;  
+   border-radius: 5px;
+   }
+   .button1{
+    margin-left: 25vw;
+   }
+   .button2{
+    margin-left: 5vw;
    }
 
   .footer{
-    margin-top: 2vw;
+    margin-top: 8vh;
     padding-left: 3.5vw;
     grid-area: ft;      
   }

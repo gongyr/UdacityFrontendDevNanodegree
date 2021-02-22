@@ -47,19 +47,25 @@
     text-decoration: none;
   }
    .content{
-    padding-left: 15vw;
-    padding-right:15vw;
+    padding-left: 10vw;
+    padding-right:10vw;
     grid-area: ct;
     display:flex;
     flex-flow: row wrap;
    }
    .innerbox{
-    border: 3px solid;
+    /*border: 3px solid*/;
     border-radius: 25px;
-    border-color: #3a2e40;
+    /*border-color: #3a2e40*/;
     flex: 1 0 28%;
-    margin-bottom: 5px; 
-    margin-right:5px   
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color:LemonChiffon;
+    transition: 0.3s;
+    margin-bottom: 30px; 
+    margin-right: 30px;  
+   }
+   .innerbox:hover {
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
    }
    .element{
     padding-top: 30px;
