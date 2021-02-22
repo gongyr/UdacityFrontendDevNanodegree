@@ -27,25 +27,6 @@
 
 }
 }
-
-.box{
-    /*border: 1px solid grey*/;
-    background: rgb(254, 250, 246);
-    }
-  .header{
-    padding: 3.5vw;
-    padding-top: 4vh;
-    font-size: 1.5em;
-    grid-area: hd;
-  }
-  .headertag{
-    padding-right: 4vw;
-  }
-
-  a{
-    color:black;
-    text-decoration: none;
-  }
    .content{
     padding-left: 10vw;
     padding-right:10vw;
@@ -80,26 +61,3 @@
     flex: 1 0 50%;
    }
    }
-
-  .footer{
-    margin-top: 2vw;
-    padding-left: 3.5vw;
-    grid-area: ft;      
-  }
-
-  .email{
-    width:60px;
-    padding-left: 40vw;
-    padding-right: 30px;
-    padding-bottom: 15px;
-  }
-  .linkedin{
-    padding-bottom: 20px;
-    padding-right: 30px;
-  }
-  .github{
-    width:50px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-  }
-

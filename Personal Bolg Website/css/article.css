@@ -1,7 +1,7 @@
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:10vh 195vh 15vh;
+  grid-template-rows:10vh 200vh 15vh;
   grid-gap: 10px;
   grid-template-areas: 
   "hd hd hd"
@@ -27,25 +27,6 @@
 
 }
 }
-
-.box{
-    /*border: 1px solid grey*/;
-    background: rgb(254, 250, 246);
-    }
-  .header{
-    padding: 3.5vw;
-    padding-top: 4vh;
-    font-size: 1.5em;
-    grid-area: hd;
-  }
-  .headertag{
-    padding-right: 4vw;
-  }
-
-  a{
-    color:black;
-    text-decoration: none;
-  }
 
   .content{
     padding-left: 15vw;
@@ -76,6 +57,27 @@
     width:50px;
     height:50px;
    }
+   .firstWord{
+    font-size: 2.25em;
+   }
+    blockquote {
+      background: #f9f9f9;
+      border-left: 10px solid #ccc;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
+    }
+    blockquote:before {
+      color: #ccc;
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.4em;
+    }
+    blockquote p {
+      display: inline;
+    }
 
    button{
    border: none;
@@ -85,7 +87,7 @@
    text-decoration: none;
    display: inline-block;
    font-size: 16px;
-   margin: 4px 2px;
+   margin: 4px 4px;
    cursor: pointer;
    background-color: plum;
    display:inline block;  
@@ -98,25 +100,4 @@
     margin-left: 5vw;
    }
 
-  .footer{
-    margin-top: 8vh;
-    padding-left: 3.5vw;
-    grid-area: ft;      
-  }
-
-  .email{
-    width:60px;
-    padding-left: 40vw;
-    padding-right: 30px;
-    padding-bottom: 15px;
-  }
-  .linkedin{
-    padding-bottom: 20px;
-    padding-right: 30px;
-  }
-  .github{
-    width:50px;
-    padding-bottom: 20px;
-    padding-right: 30px;
-  }
 

@@ -1,0 +1,21 @@
+  footer{
+    margin-top: 2vw;
+    padding-left: 3.5vw;
+    grid-area: ft;      
+  }
+
+  .email{
+    width:60px;
+    padding-left: 40vw;
+    padding-right: 30px;
+    padding-bottom: 15px;
+  }
+  .linkedin{
+    padding-bottom: 20px;
+    padding-right: 30px;
+  }
+  .github{
+    width:50px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+  }
